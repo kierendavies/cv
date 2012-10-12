@@ -1,0 +1,232 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column Curriculum Vitae XeLaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Font size (10pt, 11pt or 12pt)
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Constantia} % Main document font
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Sophia Nubian} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+%\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{linkcolor}{HTML}{000000}
+%\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{shade}{HTML}{DDDDDD}
+%\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{text1}{HTML}{000000}
+%\definecolor{headings}{HTML}{701112} % Dark red color for headings
+\definecolor{headings}{HTML}{2B2B2B}
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Kieren Davies}\\ % Your name
+{\LARGE Curriculum Vit\ae\\[15pt]\par}}
+	
+%----------------------------------------------------------------------------------------
+
+% Start the left-hand side of the page
+\begin{minipage}[t]{0.5\textwidth}
+\vspace{0pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & 12 Kronenzicht Villas, Brunia Way, Hout Bay \\ % Address
+\raisebox{-3pt}{\Mobilefone} & +27 78 988 4864 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:kieren@kierendavies.co.za}{kieren@kierendavies.co.za} \\ % Email address
+\Keyboard & \href{http://kierendavies.co.za/}{http://kierendavies.co.za/} \\ % Website
+\end{tabular}
+}
+}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+%----------------------------------------------------------------------------------------
+% EDUCATION -1-
+
+2011 -- \textsc{Present} & \textbf{Bachelor of Science} \\ 
+& \textsc{Mathematics \& Computer Science} \\ 
+& \textit{University of Cape Town}\\
+&\\
+	 
+%----------------------------------------------------------------------------------------
+% EDUCATION -2-
+
+2009 -- 2010 & \textbf{International Baccalaureate} \\ 
+%& \small 35 points \\
+& \textit{International School of Hout Bay}\\
+&\\
+	 
+%----------------------------------------------------------------------------------------
+
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{ Skills} 
+
+\begin{tabular}{rl}
+Extensive Knowledge
+& Python, Java \\
+& \\
+Moderate Knowledge
+& C++, C\#, Ruby, SQL\\
+& \LaTeX, Git, Mercurial \\
+& \\
+Basic Knowledge
+& Bash, Octave \\
+& \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards} 
+
+\begin{tabular}{rl}
+2010	 & \textbf{Faculty of Science Masters Scholarship}\\
+& \textit{The University of California}\\ \\
+
+2008	 & \textbf{Top Achiever Award -- Commerce}\\
+& \textit{Business Association of California}
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % End left-hand side of the page
+\hfill
+% Start the right-hand side of the page
+\begin{minipage}[t]{0.44\textwidth} 
+\vspace{0pt} %trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience} 
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE -1-
+
+{\raggedleft\textsc{December 2010 -- February 2011}\par}
+
+{\raggedright\large Intern at \textsc{SKA Africa}\\
+\textit{Scientific data processing}\\[5pt]}
+
+\normalsize{Examined data from the KAT7 radio telescope with SciPy and Matplotlib to search for unusual phenomena.}\\
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE -2-
+
+{\raggedleft\textsc{July 2011}\par}
+
+{\raggedright\large Intern at \textsc{Praekelt Foundation}\\
+\textit{Machine learning}\\[5pt]}
+
+\normalsize{Developed a Bayesian user content filter for use with a Django web portal, \emph{Young Africa Live}.}\\
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE -3-
+
+{\raggedleft\textsc{September 2011}\par}
+
+{\raggedright\large Intern at \textsc{RightShift}\\
+\textit{Algorithmic analysis}\\[5pt]}
+
+\normalsize{Statistically optimised the behaviour of an online slot machine.}\\
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE -4-
+
+{\raggedleft\textsc{December 2011 -- February 2012}\par}
+
+{\raggedright\large Intern at \textsc{Teach Me 2}\\
+\textit{Web application development}\\[5pt]}
+
+\normalsize{Developed a standalone Ruby on Rails web application for automated templating and PDF generation.}\\
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE -5-
+
+{\raggedleft\textsc{June 2012 -- July 2012}\par}
+
+{\raggedright\large Intern at \textsc{Krit}\\
+\textit{Web application development}\\[5pt]}
+
+\normalsize{Developed utilities for keyword extraction from user reviews, and maintaineda .NET MVC application.}\\
+
+%----------------------------------------------------------------------------------------	
+
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
