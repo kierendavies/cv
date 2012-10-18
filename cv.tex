@@ -22,6 +22,8 @@
 
 \documentclass[a4paper,10pt]{article} % Font size (10pt, 11pt or 12pt)
 
+\usepackage{tabularx}
+
 \usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
 
 \usepackage{marvosym} % Required for symbols in the colored box
@@ -32,8 +34,8 @@
 % Fonts and tweaks for XeLaTeX
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont[Mapping=tex-text]{Constantia} % Main document font
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Sophia Nubian} % Font for your name at the top
+\setromanfont[Mapping=tex-text]{Linux Libertine O}%{Constantia} % Main document font
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Linux Biolinum O} % Font for your name at the top
 %\setmonofont[Scale=MatchLowercase]{Andale Mono}
 
 % Colors for links, text and headings
@@ -90,13 +92,33 @@
 
 \colorbox{shade}{\textcolor{text1}{
 \begin{tabular}{c|p{7cm}}
-\raisebox{-4pt}{\textifsymbol{18}} & 12 Kronenzicht Villas, Brunia Way, Hout Bay \\ % Address
+\raisebox{-4pt}{\textifsymbol{18}} & 12 Kronenzicht Villas, Brunia Way, \\
+                                   & \hspace{5pt} Hout Bay, 7806, South Africa \\ % Address
 \raisebox{-3pt}{\Mobilefone} & +27 78 988 4864 \\ % Phone number
 \raisebox{-1pt}{\Letter} & \href{mailto:kieren@kierendavies.co.za}{kieren@kierendavies.co.za} \\ % Email address
-\Keyboard & \href{http://kierendavies.co.za/}{http://kierendavies.co.za/} \\ % Website
+\Keyboard & \href{http://www.kierendavies.co.za/}{http://www.kierendavies.co.za/} \\ % Website
 \end{tabular}
 }
 }\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills} 
+
+\begin{tabular}{rl}
+Extensive
+& Python, Java \\
+& \\
+Moderate
+& C++, C\#, Ruby, SQL, \LaTeX \\
+& Android, Git, Mercurial \\
+& \\
+Basic
+& Bash, Octave \\
+& \\
+\end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -109,65 +131,21 @@
 %----------------------------------------------------------------------------------------
 % EDUCATION -1-
 
-2011 -- \textsc{Present} & \textbf{Bachelor of Science} \\ 
-& \textsc{Mathematics \& Computer Science} \\ 
-& \textit{University of Cape Town}\\
-&\\
-	 
-%----------------------------------------------------------------------------------------
-% EDUCATION -2-
-
 2009 -- 2010 & \textbf{International Baccalaureate} \\ 
 %& \small 35 points \\
 & \textit{International School of Hout Bay}\\
 &\\
 	 
 %----------------------------------------------------------------------------------------
+% EDUCATION -2-
+
+2011 -- \textsc{Present} & \textbf{Bachelor of Science} \\ 
+& \textsc{Mathematics \& Computer Science} \\ 
+& \textit{University of Cape Town}\\
+	 
+%----------------------------------------------------------------------------------------
 
 \end{tabular}\\[10pt]
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS
-%----------------------------------------------------------------------------------------
-
-\section{ Skills} 
-
-\begin{tabular}{rl}
-Extensive Knowledge
-& Python, Java \\
-& \\
-Moderate Knowledge
-& C++, C\#, Ruby, SQL\\
-& \LaTeX, Git, Mercurial \\
-& \\
-Basic Knowledge
-& Bash, Octave \\
-& \\
-\end{tabular}
-
-%----------------------------------------------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	AWARDS
-%----------------------------------------------------------------------------------------
-
-\section{Awards} 
-
-\begin{tabular}{rl}
-2010	 & \textbf{Faculty of Science Masters Scholarship}\\
-& \textit{The University of California}\\ \\
-
-2008	 & \textbf{Top Achiever Award -- Commerce}\\
-& \textit{Business Association of California}
-\end{tabular}\\[10pt]
-
-%----------------------------------------------------------------------------------------
-
-\end{minipage} % End left-hand side of the page
-\hfill
-% Start the right-hand side of the page
-\begin{minipage}[t]{0.44\textwidth} 
-\vspace{0pt} %trick for alignment
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -178,54 +156,122 @@ Basic Knowledge
 %----------------------------------------------------------------------------------------
 % WORK EXPERIENCE -1-
 
-{\raggedleft\textsc{December 2010 -- February 2011}\par}
-
-{\raggedright\large Intern at \textsc{SKA Africa}\\
+{\raggedright{\large Intern at \textsc{SKA Africa}} \hfill \textsc{Dec 2010 -- Feb 2011}\\
 \textit{Scientific data processing}\\[5pt]}
 
-\normalsize{Examined data from the KAT7 radio telescope with SciPy and Matplotlib to search for unusual phenomena.}\\
+Examined data from the KAT7 radio telescope with SciPy and Matplotlib to search for unusual phenomena.\\
 
 %----------------------------------------------------------------------------------------
 % WORK EXPERIENCE -2-
 
-{\raggedleft\textsc{July 2011}\par}
-
-{\raggedright\large Intern at \textsc{Praekelt Foundation}\\
+{\raggedright{\large Intern at \textsc{Praekelt Foundation}} \hfill \textsc{Jul 2011}\\
 \textit{Machine learning}\\[5pt]}
 
-\normalsize{Developed a Bayesian user content filter for use with a Django web portal, \emph{Young Africa Live}.}\\
+Developed a Bayesian user content filter for use with a Django web portal, \emph{Young Africa Live}.\\
 
 %----------------------------------------------------------------------------------------
 % WORK EXPERIENCE -3-
 
-{\raggedleft\textsc{September 2011}\par}
-
-{\raggedright\large Intern at \textsc{RightShift}\\
+{\raggedright{\large Intern at \textsc{RightShift}} \hfill \textsc{Sep 2011}\\
 \textit{Algorithmic analysis}\\[5pt]}
 
-\normalsize{Statistically optimised the behaviour of an online slot machine.}\\
+Statistically optimised the behaviour of an online slot machine.\\
 
 %----------------------------------------------------------------------------------------
 % WORK EXPERIENCE -4-
 
-{\raggedleft\textsc{December 2011 -- February 2012}\par}
-
-{\raggedright\large Intern at \textsc{Teach Me 2}\\
+{\raggedright{\large Intern at \textsc{Teach Me 2}} \hfill \textsc{Dec 2011 -- Feb 2012}\\
 \textit{Web application development}\\[5pt]}
 
-\normalsize{Developed a standalone Ruby on Rails web application for automated templating and PDF generation.}\\
+Developed a standalone Ruby on Rails web application for automated templating and PDF generation.\\
 
 %----------------------------------------------------------------------------------------
 % WORK EXPERIENCE -5-
 
-{\raggedleft\textsc{June 2012 -- July 2012}\par}
-
-{\raggedright\large Intern at \textsc{Krit}\\
+{\raggedright{\large Intern at \textsc{Krit}} \hfill \textsc{Jun 2012 -- Jul 2012}\\
 \textit{Web application development}\\[5pt]}
 
-\normalsize{Developed utilities for keyword extraction from user reviews, and maintaineda .NET MVC application.}\\
+Developed utilities for keyword extraction from user reviews, and maintained a .NET MVC application.\\
 
-%----------------------------------------------------------------------------------------	
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % End left-hand side of the page
+\hfill
+% Start the right-hand side of the page
+\begin{minipage}[t]{0.44\textwidth} 
+\vspace{0pt} %trick for alignment
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards} 
+
+\begin{tabular}{rl}
+& \textit{Primary Mathematics World Contest}\\
+2005 & \textbf{South African team member}\\[5pt]
+
+& \textit{UCT Mathematics Competition}\\
+2006 -- 2010 & \textbf{Gold award}\\[5pt]
+
+& \textit{Eskom Science Expo}\\
+2006 & \textbf{Silver medal}\\
+2008 & \textbf{Gold medal}\\[5pt]
+
+& \textit{South African Computer Olympiad}\\
+2009 & \textbf{Finalist}\\
+2010 & \textbf{Silver medal}\\[5pt]
+
+& \textit{International Olympiad in Informatics}\\
+2011 & \textbf{South African team member}
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	COMMUNITY INVOLVEMENT
+%----------------------------------------------------------------------------------------
+
+\section{Community Involvement}
+
+{\raggedright{\large UCT Algorithm Circle} \hfill \textsc{2009 -- Present}\\
+\textit{Lecturer, contest manager, deputy chair}\\[5pt]}
+
+\normalsize{Student society aimed at spreading interest and knowledge of advanced computer science, with weekly classes on various topics.}\\
+
+%----------------------------------------------------------------------------------------
+
+{\raggedright{\large Umonya} \hfill \textsc{2011 -- Present}\\
+\textit{Tutor, lecturer}\\[5pt]}
+
+\normalsize{Non-profit organisation which runs courses on Python programming for high school students.}\\
+
+%----------------------------------------------------------------------------------------
+
+{\raggedright{\large SA Computer Olympiad} \hfill \textsc{2011 -- Present}\\
+\textit{Scientific committee, IOI delegation}\\[5pt]}
+
+\normalsize{Committee which sets problems and manages all technical aspects of the contest.
+Coach and deputy team leader for the International Olympiad in Informatics.}\\
+
+%----------------------------------------------------------------------------------------
+
+{\raggedright{\large The Shuttleworth Lab} \hfill \textsc{2012 -- Present}\\
+\textit{Committee member, administrator}\\[5pt]}
+
+\normalsize{Open source computer laboratory at the University of Cape Town.}\\
+
+%----------------------------------------------------------------------------------------
+
+\section{Other Interests}
+
+\begin{tabularx}{\linewidth}{rX}
+Music & Fan of all music from baroque to dubstep.
+        Played saxophone in a jazz band and drums in a rock band.\\[5pt]
+Sport & Regular paintballer and rock climber.  Opened several climbing routes in popular areas.
+\end{tabularx}
 
 \end{minipage} % End right-hand side of the page
 
