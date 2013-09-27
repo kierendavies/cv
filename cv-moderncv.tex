@@ -3,6 +3,14 @@
 \moderncvstyle{banking}
 \moderncvcolor{black}
 
+\newcommand{\cventryfollowon}[7][.25em]{
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}%
+      {\itshape #3\ifthenelse{\equal{#6}{}}{}{, #6}} & {\itshape #2}\\%
+  \end{tabular*}%
+  \ifx&#7&%
+    \else{\\\vbox{\small#7}}\fi%
+  \par\addvspace{#1}}
+
 \usepackage[scale=0.75]{geometry}
 \setlength{\hintscolumnwidth}{3cm}
 
@@ -23,8 +31,19 @@
 % \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
 \section{Education}
-\cventry{2009--2010}{International Baccalaureate}{International School of Hout Bay}{}{35 points}{}
-\cventry{2011--2013}{B.Sc.~Mathematics (expected)}{University of Cape Town}{}{}{Dean's merit list 2011}
+\cventry{2007--2008}{IGCSE}{International School of Hout Bay}{}{International Certificate of Education with Distinction}{%
+    Highest mark in South Africa for Mathematics\\
+    Highest mark in South Africa for Physics\\
+    Highest mark in South Africa for Information Technology
+}
+\cventryfollowon{2009--2010}{International Baccalaureate}{}{}{35 points}{%
+    Highest Achievement in Mathematics\\
+    Highest Achievement in Physics
+}
+\vspace{3pt}
+\cventry{2011--2013}{B.Sc.~Mathematics (expected)}{University of Cape Town}{}{}{%
+    Dean's merit list 2012
+}
 
 \section{Work Experience}
 \cventry{Dec 2010--Feb 2011}{Science processing intern}{SKA Africa}{}{}{}
@@ -35,19 +54,23 @@
 \cventry{Dec 2012--Feb 2013}{Software engineer intern}{Facebook}{Menlo Park, California}{}{}
 \cventry{Jun 2013--Jul 2013}{Software development engineer intern}{Amazon}{}{}{}
 
+\clearpage
+
 \section{Achievements}
 \cventry{2005}{South African team}{Primary Mathematics World Contest}{Hong Kong}{}{}
 \cventry{2006--2010}{Gold award}{UCT Mathematics Olympiad}{}{}{}
+\cventry{2006--2009}{Western Cape team}{Interprovincial Mathematics Olympiad}{}{}{}
+\cventry{2007--2010}{Final round}{South African Mathematics Olympiad}{}{}{}
 \cventry{2006}{Silver medal}{Eskom Science Expo}{}{}{}
-\cventry{2008}{Gold medal}{Eskom Science Expo}{}{}{}
-\cventry{2009}{Finalist}{South African Computer Olympiad}{}{}{}
-\cventry{2010}{Silver medal}{South African Computer Olympiad}{}{}{}
+\cventryfollowon{2008}{Gold medal}{Eskom Science Expo}{}{}{}
+\cventry{2009}{Final round}{South African Computer Olympiad}{}{}{}
+\cventryfollowon{2010}{Silver medal}{South African Computer Olympiad}{}{}{}
 \cventry{2011}{South African team}{International Olympiad in Informatics}{Pattaya, Thailand}{}{}
 
 \section{Community Involvement}
 \cventry{2009--2013}{Deputy chair, volunteer lecturer}{UCT Algorithm Circle}{}{}{Student society aimed at spreading interest and knowledge of advanced computer science, with weekly classes on various topics.}
 \cventry{2012}{Committee member, administrator}{The Shuttleworth Lab}{}{}{}
-\cventry{2011--2013}{Volunteer}{Umonya}{}{}{Non-profit organisation which hosts courses on Python programming for high school students.}
+\cventry{2011--2013}{Volunteer}{Umonya}{}{}{Non-profit organisation which hosts free courses on Python programming for high school students.}
 \cventry{2011--2012}{Scientific committee}{South African Computer Olympiad}{}{}{Setting problems and managing all technical aspects of the contest.}
 \cventry{2012}{Deputy team leader}{International Olympiad in Informatics}{Montichiari, Italy}{}{}
 
