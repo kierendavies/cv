@@ -1,0 +1,34 @@
+\documentclass[a4paper,11pt,sans]{moderncv}
+\usepackage{subfiles}
+
+\moderncvstyle{banking}
+\moderncvcolor{black}
+
+\newcommand{\cventryfollowon}[7][.25em]{
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}%
+      {\itshape #3\ifthenelse{\equal{#6}{}}{}{, #6}} & {\itshape #2}\\%
+  \end{tabular*}%
+  \ifx&#7&%
+    \else{\\\vbox{\small#7}}\fi%
+  \par\addvspace{#1}}
+
+\usepackage[a4paper,scale=0.75,top=2.5cm,bottom=1cm,includefoot]{geometry}
+\setlength{\hintscolumnwidth}{3cm}
+
+\usepackage{url}
+\urlstyle{same}
+
+\moderncvicons{awesome}
+
+\name{Kieren}{Davies}
+\title{Curriculum Vit\ae}
+
+% \address{24 Woodlands}{5 Highstead Road}{Rondebosh 7700}
+\phone[mobile]{078~988~4864}
+\email{kieren@kdavi.es}
+\homepage{http://kierendavies.co.za/}
+% \extrainfo{DVSKIE001}
+\extrainfo{Available online at \url{https://github.com/kierendavies/cv}}
+
+\begin{document}
+\end{document}
