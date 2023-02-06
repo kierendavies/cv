@@ -1,122 +1,40 @@
-\documentclass[a4paper,10pt,sans]{moderncv}
+\documentclass[a4paper,11pt,nocolor,sans]{moderncv}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+\recomputelengths
 
-\moderncvstyle{banking}
-\moderncvcolor{black}
+\moderncvtheme[black]{classic}
+\sethintscolumntowidth{Nov 2014--Aug 2015}
 
-\newcommand{\cventryfollowon}[7][.25em]{
-  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}%
-      {\itshape #3\ifthenelse{\equal{#6}{}}{}{, #6}} & {\itshape #2}\\%
-  \end{tabular*}%
-  \ifx&#7&%
-    \else{\\\vbox{\small#7}}\fi%
-  \par\addvspace{#1}}
+\firstname{Kieren}
+\familyname{Davies}
+\title{Polyglot Software Engineer}
 
-\usepackage[a4paper,scale=0.75,top=2.5cm,bottom=2cm,includefoot]{geometry}
-\setlength{\hintscolumnwidth}{3cm}
-
-\usepackage{url}
-\urlstyle{same}
-
-\def\labelitemi{\textbullet}
-
-\moderncvicons{awesome}
-
-\name{Kieren}{Davies}
-\title{Curriculum Vit\ae}
-
-% \address{24 Woodlands}{5 Highstead Road}{Rondebosh 7700}
-\address{Amsterdam}{Netherlands}
-\phone[mobile]{+31~62~980~5112}
+\mobile{+31~62~980~5112}
 \email{kieren@kdavi.es}
-% \homepage{http://kdavi.es/}
-\extrainfo{Available online at \url{https://github.com/kierendavies/cv}}
+\social[github]{kierendavies}
+\social[linkedin]{kierendavies}
 
 \begin{document}
 \makecvtitle
 
-% \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
-
 \section{Education}
-% \cventry{2007--2008}{IGCSE}{International School of Hout Bay}{South Africa}{International Certificate of Education with Distinction}{%
-%    Highest mark in South Africa for Mathematics\\
-%    Highest mark in South Africa for Physics\\
-%    Highest mark in South Africa for Information Technology
-% }
-% \cventryfollowon{2009--2010}{International Baccalaureate}{}{}{35 points}{%
-% \cventry{2009--2010}{International Baccalaureate}{International School of Hout Bay}{South Africa}{35 points}{%
-%    Highest Achievement in Mathematics\\
-%    Highest Achievement in Physics
-% }
-% \vspace{3pt}
-\cventry{2011--2014}{B.Sc.\ Mathematics and Computer Science}{University of Cape Town}{South Africa}{}{%
-  Including courses in applied mathematics, statistics, and physics.  Dean's merit list.
-}
-\cventryfollowon{2016}{B.Sc.\ (Hons.) Computer Science}{}{}{}{%
-  Thesis: \emph{Towards Test-Driven Development of Ontologies: An Analysis of Testing Algorithms}.
-}
+\cventry{2011--2014}{B.Sc.\ Mathematics and Computer Science}{University of Cape Town}{}{}{}
+\cventry{2016}{B.Sc.\ (Hons.) Computer Science}{University of Cape Town}{}{}{}
 
 \section{Selected work experience}
-\cventry{Oct 2021--present}{Lead software engineer}{Zivver}{Netherlands}{}{%
+\cventry{Oct 2021--present}{Staff Software Engineer}{Zivver}{Amsterdam (remote)}{}{%
   Improving the security and scalability of the messaging platform, leading the back-end guild, and maintaining a long-term technical vision and roadmap.
-  Remote.
 }
-\cventryfollowon{Jan 2021--Oct 2021}{Engineering manager}{Zivver}{Netherlands}{}{%
-  Growing and managing a cross-functional team of 8 back-end, front-end, and QA engineers.
-  Building and launching a new integrated document signing product.
-  Remote.
+\cventry{Jan 2021--Oct 2021}{Engineering Manager}{Zivver}{Amsterdam (remote)}{}{%
+  Grew and managed a cross-functional team of 8 backend, frontend, and QA engineers.
+  Built a new integrated document signing product and prepared it for launch.
 }
-\cventryfollowon{Jul 2020--Jan 2021}{Senior software engineer}{}{}{}{%
-  % Back-end security and scalability for a messaging product.
-  % Remote.
-}
-% \cventry{Mar 2020--Apr 2020}{Software engineer}{Rekki}{Netherlands}{}{}
-\cventry{Jan 2019--Feb 2020}{Senior quantitative developer}{Independent View}{Netherlands}{}{%
-  Automated futures trading and reporting system.
-}
-\cventry{Jan 2017--Jan 2019}{Software developer}{Booking.com}{Netherlands}{}{%
-  % Localisation: user-facing webapp features targeting emerging markets. \\
-  % SEO Infrastructure: tooling, big data processing, and statistical analysis for SEO experimentation. \\
-  % Cloud Infrastructure: greenfield orchestration layer for managing Google cloud services with Kubernetes.
-  Localisation, SEO experimentation tooling, and cloud orchestration.
-}
-\cventry{Feb 2018--Jul 2018}{Blockchain developer}{ODEM}{Netherlands}{}{
-  Smart contracts for the Ethereum blockchain.
-  Freelance, remote.
-}
-% \cventry{Oct 2015--Jan 2016}{Data science intern}{Jumo}{South Africa}{}{%
-%   Assisted with infrastructure and data storage.  Designed and developed internal microservices and APIs.
-% }
-\cventry{Nov 2014--Aug 2015}{Software development engineer intern}{Amazon Web Services}{South Africa}{}{%
-  Numerous internal operational tools.
-}
-% \cventryfollowon{Jun 2013--Jul 2013}{Software development engineer intern}{}{}{}{%
-%   Integrated internal tools into a web frontend.
-% }
-% \cventryfollowon{Nov 2013--Feb 2014}{Software development engineer intern}{}{}{}{%
-%   Developed a framework and automated service for metric aggregation and reporting.
-% }
-% \cventry{Jun 2014--Jul 2014}{Software developer intern}{Oracle}{South Africa}{}{%
-%   Developed a Vagrant plugin to use Oracle Cloud as a virtualization provider.
-% }
-\cventry{Dec 2012--Feb 2013}{Software engineer intern}{Facebook}{California, US}{}{%
-  Internal tools for Hadoop Distibuted File System.
-}
-% \cventry{Jun 2012--Jul 2012}{Software developer intern}{Krit}{South Africa}{}{%
-%   Developed utilities for keyword extraction from user-written reviews.
-% }
-% \cventry{Dec 2011--Feb 2012}{Software developer intern}{Teach Me 2}{South Africa}{}{%
-%   Developed a stand-alone web application offering templated PDF generation.
-% }
-% \cventry{Sep 2011}{Software developer intern}{RightShift}{South Africa}{}{
-%   Optimised the stochastic behaviour of online casino games.
-% }
-% \cventry{Jul 2011}{Software developer intern}{Praekelt Foundation}{South Africa}{}{%
-%   Implemented a Bayesian filter for user content, to be integrated with mobile web portal \emph{Young Africa Live}.
-% }
-% \cventry{Dec 2010--Feb 2011}{Science processing intern}{SKA Africa}{South Africa}{}{%
-%   Analysed data from the KAT7 radio telescope to search for unusual phenomena.
-% }
-(Omitted: 9 internships, 2010--2016)
+\cventry{Jul 2020--Jan 2021}{Senior Software Engineer}{Zivver}{Amsterdam (remote)}{}{}
+\cventry{Jan 2019--Feb 2020}{Senior Software Engineer}{Independent View}{Amsterdam}{}{}
+\cventry{Jan 2017--Jan 2019}{Software Engineer}{Booking.com}{Amsterdam}{}{}
+\cventry{Nov 2014--Aug 2015}{Software Engineer Intern}{Amazon Web Services}{Cape Town}{}{}
+\cventry{Dec 2012--Feb 2013}{Software Engineer Entern}{Facebook}{Menlo Park, CA}{}{}
 
 % Publications
 \bibliographystyle{ieeetr}
@@ -124,29 +42,6 @@
 \nocite{ijait}
 
 \section{Achievements}
-% \cventry{2005}{South African team}{Primary Mathematics World Contest}{Hong Kong}{}{}
-% \cventry{2006--2010}{Gold award}{UCT Mathematics Olympiad}{South Africa}{}{}
-% \cventry{2006--2009}{Western Cape team}{Interprovincial Mathematics Olympiad}{South Africa}{}{}
-% \cventry{2007--2010}{Finalist}{South African Mathematics Olympiad}{South Africa}{}{}
-% \cventry{2006}{Silver medal}{Eskom Science Expo}{South Africa}{}{}
-% \cventryfollowon{2008}{Gold medal}{Eskom Science Expo}{South Africa}{}{}
-% \cventry{2009}{Finalist}{South African Computer Olympiad}{South Africa}{}{}
-% \cventry{2010}{Silver medal}{South African Computer Olympiad}{South Africa}{}{}
-% \cventry{2011}{Contestant}{International Olympiad in Informatics}{Thailand}{}{}
-\cventry{2014}{World finalist}{ACM International Collegiate Programming Contest}{Russia}{}{}
-\cventry{2017}{World finalist}{ACM International Collegiate Programming Contest}{South Dakota, US}{}{}
-
-% \section{Community Involvement}
-% \cventry{2009--2013}{Deputy chair, volunteer lecturer}{UCT Algorithm Circle}{South Africa}{}{%
-%   Student society aimed at spreading interest and knowledge of advanced computer science, with weekly classes on various topics.
-% }
-% \cventry{2012}{Committee member, administrator}{UCT Shuttleworth Computer Lab}{South Africa}{}{}
-% \cventry{2011--2013}{Volunteer}{Umonya}{South Africa}{}{%
-%   Non-profit organisation which hosts free courses on Python programming for high school students.
-% }
-% \cventry{2011--2012}{Scientific committee}{South African Computer Olympiad}{South Africa}{}{%
-%   Set problems and managed technical aspects of the contest.
-% }
-% \cventry{2012}{Deputy team leader}{International Olympiad in Informatics}{Italy}{}{}
+\cventry{2014, 2017}{World finalist}{ACM International Collegiate Programming Contest}{}{}{}
 
 \end{document}
