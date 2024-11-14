@@ -1,0 +1,53 @@
+uct:
+  type: thesis
+  title: "Towards Test-Driven Development of Ontologies: An Analysis of Testing Algorithms"
+  author: Davies, Kieren
+  organization: University of Cape Town
+  date: 2016-11-18
+
+springer:
+  type: article
+  title: "TDDonto2: A Test-Driven Development Plugin for Arbitrary TBox and ABox Axioms"
+  author:
+    - Davies, Kieren
+    - Keet, C. Maria
+    - Ławrynowicz, Agnieszka
+  serial-number:
+    doi: 10.1007/978-3-319-70407-4_23
+  # page-range: 120-125
+  date: 2017-11-08
+  parent:
+    type: proceedings
+    title: "The Semantic Web: ESWC 2017 Satellite Events"
+    # editor:
+    #   - Blomqvist, Eva
+    #   - Hose, Katja
+    #   - Paulheim, Heiko
+    #   - Ławrynowicz, Agnieszka
+    #   - Ciravegna, Fabio
+    #   - Hartig, Olaf
+    publisher: Springer
+    # serial-number:
+    #   isbn: 978-3-319-70406-7
+    #   issn: 0302-9743
+    # parent:
+    #   type: anthology
+    #   title: Lecture Notes in Computer Science
+    #   volume: 10577
+
+ijait:
+  type: article
+  title: More Effective Ontology Authoring with Test-Driven Development and the TDDonto2 Tool
+  author:
+    - Davies, Kieren
+    - Keet, C. Maria
+    - Ławrynowicz, Agnieszka
+  serial-number:
+    doi: "10.1142/S0218213019500234"
+  # page-range: 1950023
+  date: 2019-11-15
+  parent:
+    type: periodical
+    title: International Journal on Artificial Intelligence Tools
+    # volume: 28
+    # issue: 7
